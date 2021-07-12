@@ -7,5 +7,6 @@ RUN sed -i -e 's/^\(upload_max_filesize\|post_max_size\) =.*/\1 = 150M/g' "$PHP_
 WORKDIR /var/www/html
 RUN rm -rf *
 COPY ./ /var/www/html
+RUN mkdir upload
 RUN chown -R www-data:www-data /var/www/html
 EXPOSE 80
