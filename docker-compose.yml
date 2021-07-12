@@ -1,0 +1,6 @@
+version: '2'
+services:
+  cermine:
+    build: .
+    ports:
+      - "7780:80"
