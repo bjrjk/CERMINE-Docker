@@ -7,8 +7,7 @@ if ($_FILES["file"]["error"] > 0) {
 	die("Error: " . $_FILES["file"]["error"] . '.');
 }
 
-if (($_FILES["file"]["type"] != "application/pdf") ||
-	($_FILES["file"]["size"] > 128 * 1024 * 1024) || // Greater than 128MB
+if (($_FILES["file"]["size"] > 128 * 1024 * 1024) || // Greater than 128MB
 	!in_array($extension, $allowedExts)) 
 {
 	die("Error: Illegal File Suffix, MIME Type or Filesize.");
