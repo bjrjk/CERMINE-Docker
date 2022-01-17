@@ -35,6 +35,3 @@ Reminder:
 The analysis of PDF Paper may take up to 2 minutes. Before analysis finished, the request to query result will only get an 'Error'. So don't request the interface frequently, a recommended request interval is 30 seconds.
 When you finished reading the result, please using the 'del' parameter to delete the temporary files in server, or the server's disk size will be occupied.
 ```
-
-# API
-https://cermine.renjikai.com/
